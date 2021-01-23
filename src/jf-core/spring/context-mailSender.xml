@@ -5,11 +5,15 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-		 <property name="host" value="spamserver.kdischool.ac.kr" />
-		<property name="port" value="25" /> 
-		 <property name="username" value="it@kdischool.ac.kr" />
-		<property name="password" value="" />
+	
+	
+	
+ 	
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"> 
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="jwyoo@pegsystem.co.kr" />
+		<property name="password" value="mymynote3" />
 		<property name="javaMailProperties">
 			<props>
 				<prop key="mail.transport.protocol">smtp</prop>
@@ -19,22 +23,5 @@
 			</props>
 		</property>
 	</bean>
-	
-	
-	
-<!-- 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"> -->
-<!-- 		<property name="host" value="smtp.gmail.com" /> -->
-<!-- 		<property name="port" value="587" /> -->
-<!-- 		<property name="username" value="jwpark@pegsystem.co.kr" /> -->
-<!-- 		<property name="password" value="pegsys6057" /> -->
-<!-- 		<property name="javaMailProperties"> -->
-<!-- 			<props> -->
-<!-- 				<prop key="mail.transport.protocol">smtp</prop> -->
-<!-- 				<prop key="mail.smtp.auth">true</prop> -->
-<!-- 				<prop key="mail.smtp.starttls.enable">true</prop> -->
-<!-- 				<prop key="mail.debug">true</prop> -->
-<!-- 			</props> -->
-<!-- 		</property> -->
-<!-- 	</bean> -->
 
 </beans>

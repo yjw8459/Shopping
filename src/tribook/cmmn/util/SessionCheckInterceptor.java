@@ -1,4 +1,4 @@
-package peg.test.cmmn.util;
+package tribook.cmmn.util;
 
 import java.util.Locale;
 

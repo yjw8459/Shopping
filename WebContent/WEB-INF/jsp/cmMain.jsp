@@ -1,16 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
 
-    <title>프리미엄 디저트 마켓 : 데저트</title>
-<!--===============================================================================================-->
-<!-- 네비게이션 상단메뉴 -->
-<!-- ================================================================================================ -->
-<!-- ================================================================================================ -->
-</head>
-<body>
 <!-- ================================================================================================ -->
     <!-- 페이지 본문 내용을 입력하세요 -->
 <!-- ================================================================================================ -->
@@ -31,22 +21,22 @@
 			
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block img-fluid" src="/img/mainBanner/1.png" alt="">
+					<img class="d-block img-fluid" src="${rc.contextPath }/resources/img/mainBanner/1.png" alt="">
 					<div class="carousel-caption d-none d-md-block">
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block img-fluid" src="/img/mainBanner/2.png" alt="">
+					<img class="d-block img-fluid" src="${rc.contextPath }/resources/img/mainBanner/2.png" alt="">
 					<div class="carousel-caption d-none d-md-block">
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block img-fluid" src="/img/mainBanner/3.png" alt="">
+					<img class="d-block img-fluid" src="${rc.contextPath }/resources/img/mainBanner/3.png" alt="">
 					<div class="carousel-caption d-none d-md-block">
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="/img/mainBanner/4.png" alt="" class="d-block img-fluid">
+					<img src="${rc.contextPath }/resources/img/mainBanner/4.png" alt="" class="d-block img-fluid">
 					<div class="carousel-caption d-none d-md-block">
 					</div>
 				</div>
@@ -138,7 +128,7 @@
         <div id="columns">
  <!-- ================================================================================================ -->        
             <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +143,7 @@
             </div>
  <!-- ================================================================================================ -->
              <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -168,7 +158,7 @@
             </div>
  <!-- ================================================================================================ -->
              <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +173,7 @@
             </div>
  <!-- ================================================================================================ -->
              <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +188,7 @@
             </div>
  <!-- ================================================================================================ -->
              <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +203,7 @@
             </div>
  <!-- ================================================================================================ -->
              <div class="goods">
-                <img src="img/mainGoodsExample/1.png">
+                <img src="${rc.contextPath }/resources/img/mainGoodsExample/1.png">
                 	<span href="#" style="float:right; margin :20px;">
                 	<!-- 장바구니 아이콘 -->
 			         <svg width="30px" height="30px" color="#5BB9A8" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -239,5 +229,3 @@
 <!-- ================================================================================================ -->
 <!-- 푸터 : 회사소개 최현석 -->
 	<!-- 푸터 -->
-	</body>
-</html>

@@ -1,78 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<!--===============================================================================================-->
-<!-- 최현석 -->
-<!-- 웹 폰트 적용 -->
-<!-- head영역의 타이틀 위에 위치하면 됩니다. -->
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-<!-- 웹 폰트 적용 끝 -->
-<!-- 필요 플러그인 로드 -->
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="/css/util.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-<!--===============================================================================================-->
- <%-- <script src="${pageContext.request.contextPath}/js/jquery-3.3.1.min.js" ></script> --%>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <!--===============================================================================================-->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
- 
- <%-- <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap-theme.min.css"> --%>
- <link rel="stylesheet" href="<c:url value='/common/css/common.css'/>" >
- <!--===============================================================================================-->
-	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/vendor/bootstrap/js/popper.js"></script>
-	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="/vendor/daterangepicker/moment.min.js"></script>
-	<script src="/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="/js/main.js"></script>
-<!--===============================================================================================-->
-<!--===============================================================================================-->
-<!-- 캐러셀 파일 로드 -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-<!-- ================================================================================================ -->
-
-<!-- ================================================================================================ -->
-
-<link rel="stylesheet" href="<c:url value='/common/css/common.css'/>" >
-<!--===============================================================================================-->
-
-
-</head>
-
-<body>
 <!-- 상단 메뉴 : 최현석-->
 <div>
 <ul class="nav nav-pills" style="float: right; margin-right: 50px;">
@@ -116,7 +45,7 @@
 <!-- 탑 배너 로고 : 최현석 -->
 <br>
 <div class="logo" >
-	<a href="/"><img src="/img/toplogo.png" alt="logo" style="display:block; margin-left: 700px; width:350px; height:150px;"></a>
+	<a href="/"><img src="${rc.contextPath }/resources/img/toplogo.png" alt="logo" style="display:block; margin-left: 700px; width:350px; height:150px;"></a>
 </div>
 <!-- 탑 배너 로고 끝 -->
 <!--===============================================================================================-->
@@ -164,7 +93,3 @@
   </div>
 </nav>
 
-</body>
-<!-- 네비게이션 코드 끝 -->
-<!--===============================================================================================-->
-</html>

@@ -1,4 +1,4 @@
-package peg.test.cmmn.web;
+package tribook.cmmn.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,6 @@ public class CmmnController {
 	
 	@RequestMapping(value="/")
 	public ModelAndView rootPath() {
-		
-		return new ModelAndView("index");
+		return new ModelAndView("cmMain.tiles");
 	}
 }

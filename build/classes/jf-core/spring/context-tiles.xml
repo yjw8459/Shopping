@@ -8,9 +8,9 @@
 <!-- 		<put-attribute name="title" value="Management Information System for KDI School" type="String" /> -->
 	<definition name="mis_base" template="/WEB-INF/jsp/cmmn/tiles_base.jsp">
 		<put-attribute name="title" value="KDIS-MIS" type="String" />
-        <put-attribute name="headerMenu" value="/WEB-INF/jsp/cmmn/tiles_header.jsp" />
-		<put-attribute name="leftMenu" value="/WEB-INF/jsp/cmmn/tiles_left.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/jsp/cmmn/tiles_footer.jsp" />
+        <put-attribute name="headerMenu" value="/WEB-INF/jsp/header.jsp" />
+		<!-- <put-attribute name="leftMenu" value="/WEB-INF/jsp/cmmn/tiles_left.jsp" /> -->
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
 		<put-attribute name="modalMessage" value="/WEB-INF/jsp/cmmn/modalMessage.jsp" />
     </definition>
 	

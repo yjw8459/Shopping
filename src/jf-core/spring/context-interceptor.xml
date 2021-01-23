@@ -14,7 +14,7 @@
  	<mvc:interceptors>
     	<mvc:interceptor>
     		<mvc:mapping path="/**" />
-	        <bean class="peg.test.cmmn.util.XSSCheckInterceptor" />        
+	        <bean class="tribook.cmmn.util.XSSCheckInterceptor" />        
     	</mvc:interceptor>
     </mvc:interceptors>        
         
@@ -22,7 +22,7 @@
     	<mvc:interceptor>
     		<mvc:mapping path="/**" />
     		<mvc:exclude-mapping path="/resources/**" />
-	        <bean class="peg.test.cmmn.util.SessionCheckInterceptor" />        
+	        <bean class="tribook.cmmn.util.SessionCheckInterceptor" />        
     	</mvc:interceptor>
     </mvc:interceptors>
     
