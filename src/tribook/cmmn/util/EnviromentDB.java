@@ -9,7 +9,16 @@ import java.sql.Statement;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class EnviromentDB {
+	
+	@Value("${loginSql}")
+	private String loginSql;
+	
+	@Value("${fileSql}")
+	private String fileSql;
+	
 	public static Connection getConnection(String id, String pw, String port) {
 		Connection conn = null;
 		try {
@@ -27,12 +36,17 @@ public class EnviromentDB {
 	public static String createTable(Map<String, Object> param) {
 		Connection conn = null; 
 		Statement stmt = null;
-		String sql = "create table stock_data("
-				+ "stk_no varchar2(5) not null,"
-				+ "stk_div varchar2(6) null,"
-				+ "stk_nm varchar2(100) null,"
-				+ "stk_div2 varchar(6) null,"
-				+ "CONSTRAINT stock_data PRIMARY KEY(stk_no))";
+		String sql = "CREATE TABLE tribooks_member"+
+						"("+
+					    "mb_id            VARCHAR2(20)     NOT NULL,"+
+					    "mb_pw            VARCHAR2(128)    NOT NULL,"+ 
+					    "in_date          VARCHAR2(20)     NOT NULL,"+ 
+					    "mb_mail          VARCHAR2(20)     NOT NULL,"+ 
+					    "mb_price         VARCHAR2(20)     NOT NULL,"+ 
+					    "mb_ authority    VARCHAR2(5)      NOT NULL,"+ 
+					    "mb_name          VARCHAR2(20)     NOT NULL,"+ 
+					    "CONSTRAINT TRIBOOKS_MEMBER_PK PRIMARY KEY (mb_id)"+
+					 ")";
 		String id = (String)param.get("jdbc_id");
 		String pw = (String)param.get("jdbc_pw");
 		String port = (String)param.get("jdbc_port");

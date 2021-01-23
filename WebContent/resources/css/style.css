@@ -2,6 +2,11 @@
     src : url("../fonts/BMDOHYEON_ttf");
     font-family: dohyeon;
 }
+
+
+	.main_wrapper{
+		height: 1200px;
+	}
 	navbar{
 	    font-family: dohyeon;
 	}
@@ -16,4 +21,17 @@
 	height : auto;
      background-color:#5BB9A8; color:white; text-align: center;
 	left:0;
+	}
+	.input-group-text {
+    width: 100px;
+    height: 0 auto;
+    
+	}
+	table {
+	    width: 400px;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	form {
+	    text-align: center;
 	}
