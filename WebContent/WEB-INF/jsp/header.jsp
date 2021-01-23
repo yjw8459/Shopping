@@ -2,6 +2,16 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<script>
+
+	function fn_enterReg(){
+		var frm = document.createElement('form');
+		document.body.appendChild(frm);
+		frm.method = 'post';
+		frm.action = '${rc.contextPath}/reg';
+		frm.submit();
+	}
+</script>
 <!-- 상단 메뉴 : 최현석-->
 <div>
 <ul class="nav nav-pills" style="float: right; margin-right: 50px;">
@@ -74,8 +84,8 @@
 			</div>
 		  </li>
 		    <li class="nav-item active" style="display:block; margin-left : 20px; ">
-		<a class="nav-link" href="#" style="color:white"> 마이페이지 </a>
-	  </li>
+				<a class="nav-link" href="#" style="color:white"> 마이페이지 </a>
+	  		</li>
 	  	<li class="nav-item icon" style="display:block; margin-left : 100px; ">
 	  		    <!-- 장바구니 아이콘 -->
 		<svg width="35px" height="35px" color="white" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -85,6 +95,12 @@
 	  <li class="nav-item active" style="display:block; margin-left : 20px; ">
 		<a class="nav-link" href="#" style="color:white"> 장바구니 </a>
 	  </li>
+
+<c:if test="${user.authority eq 'ADM'}">
+		<li class="nav-item active" style="display:block; margin-left : 20px; ">
+				<a class="nav-link" href="javascript:fn_enterReg();" style="color:white"> 상품등록 </a>
+	  	</li>
+</c:if>
 
 	</ul>
 	<form class="form-inline my-2 my-md-0">
