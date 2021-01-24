@@ -1,6 +1,4 @@
-package tribook.cmmn.mapper;
-
-import org.jboss.logging.Param;
+package tribook.member.mapper;
 
 import egovframework.rte.psl.dataaccess.mapper.Mapper;
 import tribook.cmnm.vo.MemberVO;
@@ -13,22 +11,24 @@ public interface MemberMapper {
 	
 	// 2. 회원 정보 수정
 	public int updateMemberInfo(MemberVO memberVO,
-								@Param("id") String id);
+								String id);
 	
 	// 3. 회원 정보 조회
-	public MemberVO getMemberInfo(@Param("id") String id);
+	public MemberVO getMemberInfo(String id);
 	
 	// 4. 아이디 중복 확인
-	public int overLapId(@Param("id") String id);
+	public int overLapId(String id);
 	
 	// 5. 아이디 찾기
-	public int findId(@Param("email") String email);
+	public int findId(String email);
 	
 	// 6. 비밀번호 찾기
-	public int findPw(@Param("id") String id);
+	public int findPw(String id);
 	
 	// 7. 마이페이지 비밀번호 재확인
-	public int pwCheck(@Param("id") String id, @Param("pw") String pw);
+	public int pwCheck(String id, String pw);
 	
-	// 8. 
+	// 8.ID, PW 일치 여부
+	public int checkDB(String id, String pw);
+	
 }

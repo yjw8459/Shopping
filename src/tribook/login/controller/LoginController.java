@@ -12,25 +12,4 @@ import tribook.login.service.impl.LoginImpl;
 @Controller
 public class LoginController {
 
-	@Autowired
-	LoginImpl login;
-	
-	@Autowired
-	MemberVo MemberVo;
-	
-	@Autowired
-	MemberMapper MemberMapper;
-	
-	// 로그인 액션
-	@RequestMapping("/loginAction")
-	public String loginAction(HttpServletRequest req,Model model) {
-		String id=req.getParameter("id");
-		
-		int nResult = login.doLogin();
-		
-		if(nResult<=0) {
-			System.out.println("로그인에 실패하였습니다.");
-		}
-	}
-	
 }
